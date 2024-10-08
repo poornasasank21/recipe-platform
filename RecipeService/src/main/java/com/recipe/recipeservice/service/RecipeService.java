@@ -33,7 +33,7 @@ public interface RecipeService {
     String updateRecipeImage(String path, MultipartFile file) throws IdNotFoundException, IOException;
     public List<RecipeDTO> searchRecipes(String keyword);
     ResponseEntity<SuccessResponse> editRecipeStatus(String id, String status) throws InvalidInputException;
-    public RecipeFilterListDTO fetchAllRecipesByTwoFilters(Long cuisineId, Long categoryId) throws InvalidInputException;
+    public RecipeFilterListDTO fetchAllRecipesByTwoFilters(Long cuisineId, Long categoryId) ;
     public CuisineFilterListDTO fetchAllCuisines();
     public CategoryFilterListDTO fetchAllCategory();
     public ApiResponse deleteRecipe(Long id) throws InvalidInputException;

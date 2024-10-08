@@ -220,7 +220,7 @@ public class RecipeServiceImpl implements RecipeService {
     }
 
     @Override
-    public RecipeFilterListDTO fetchAllRecipesByTwoFilters(Long cuisineId, Long categoryId) throws InvalidInputException {
+    public RecipeFilterListDTO fetchAllRecipesByTwoFilters(Long cuisineId, Long categoryId) {
         List<Recipe> recipes = recipeRepository.findRecipesByTwoFilters(cuisineId, categoryId);
         List<RecipeStatusChangeDTO> list = createAdminRecipeListDTO(recipes);
 
