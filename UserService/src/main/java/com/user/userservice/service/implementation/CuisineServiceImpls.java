@@ -18,6 +18,7 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
+
 @Service
 @RequiredArgsConstructor
 public class CuisineServiceImpls implements CuisineService {
